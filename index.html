@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Weaver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nixie+One&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+    <div class="site-logo">RainWeaver</div>
+    <header class="fixed-header">
+      <nav>
+        <ul class="header-nav">
+          <li><a href="#top" class="header-btn">HOME</a></li>
+          <li><a href="#about" class="header-btn">ABOUT</a></li>
+          <li><a href="#contact" class="header-btn">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="pixel-background"></div>
+    <div class="scanlines"></div>
+    <h1 class="title">Rain Weaver</h1>
+    <div class="rain-container" id="rainContainer"></div>
+    <div class="interaction-area" id="interactionArea"></div>
+
+    <!-- 正文内容区域 -->
+    <main class="main-content" id="mainContent">
+      <div class="content-wrapper">
+        <div class="image-text-layout">
+          <div class="image-section">
+            <img src="PICS/main.png" alt="Test1" />
+          </div>
+          <div class="text-section">
+            <p>                    </p>
+            <p>RainWeavor is a textile installation that invites rain to become a co-creator. It transforms real-time weather data—such as rainfall rhythm, intensity, and pH—into tufted carpet patterns. Rain is no longer a passive subject to be recorded, but an active designer collaborating with the machine to shape every inch of the weave.</p>
+            <p>We regard rain as part of the urban ecosystem—not something to be controlled, but welcomed into the design process. The textures on each carpet stem from real rainfall volume and density, resembling the traces rain leaves on the ground. Each piece becomes a tangible memory of weather—a dialogue between humans and nature anchored in time and space.</p>
+            <p>The project seeks to awaken environmental sensitivity in our daily lives. RainWeavor turns rain from a source of inconvenience into a poetic language that writes the breathing rhythm of the city. As people gently touch the fabric, the varying densities of tufted threads become a tactile diary of the rainy season.</p>
+            <p>                    </p>
+            <p>Keywords: Co-Design, Future Design, Urban Sustainability<br>
+          </div>
+        </div>
+        <div class="fullwidth-image-row" id="about">
+          <img src="PICS/Showcase.png" alt="RainWeavor process diagram">
+        </div>
+        <div class="bottom-centered-text">
+          <p style="text-align:center; margin-bottom:32px;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </p>
+          <p style="text-align:center; margin-top:48px; margin-bottom:32px;">
+            This is a dialogue, not mere observation. Rain becomes an active creative participant.<br>
+            RainWeavor embodies co-creation: a convergence where the crafted loom meets the sky's ever-changing patterns.<br>
+            Each textile is a unique artifact—a frozen moment of sky-expression, woven by rain itself.
+          </p>
+          <p style="text-align:center; margin-bottom:32px;">
+            RainWeavor transforms precipitation into poetry. It reimagines rain as a creative partner, blurring boundaries between the natural world and human craft, revealing hidden artistry in showers.<br>
+            Each piece testifies to the silent conversation between sky and the hand of making.
+          </p>
+          <p style="text-align:center; margin-bottom:32px;">
+            Witness the outdoor process: rain collected, dyed and woven into evolving cloth.<br>
+            If dry, interact with sensors to co-create through the loom with the sky's touch.
+          </p>
+          <p style="text-align:center; margin-bottom:32px;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </p>
+          <div class="fullwidth-image-row" id="about">
+            <img src="PICS/progresscollage.png" alt="RainWeavor making process">
+          </div>
+      </div>
+    </main>
+    <!-- 第二页雨滴动画区域 -->
+    <section id="contact" style="min-height:100vh;position:relative;">
+      <!--<div class="rain-blur-mask"></div>-->
+      <div class="rain-container" id="rainContainer2"></div>
+      <div class="contact-links">
+        <ul class="contact-link-list">
+          <li class="contact-link-title">Team Member</li>
+          <li class="contact-link-title">           </li>
+          <li><a href="https://www.figma.com/board/kTDT43rZDByb1Sx0zIsTRv/Rain-Weaving-ideas?node-id=0-1&p=f&t=QS9AuQ2KjZe5tyRL-0" target="_blank" class="contact-link">Xinnan Yu</a></li>
+          <li><a href="https://www.figma.com/board/kTDT43rZDByb1Sx0zIsTRv/Rain-Weaving-ideas?node-id=0-1&p=f&t=QS9AuQ2KjZe5tyRL-0" target="_blank" class="contact-link">Sihan Wang</a></li>
+          <li><a href="https://www.figma.com/board/kTDT43rZDByb1Sx0zIsTRv/Rain-Weaving-ideas?node-id=0-1&p=f&t=QS9AuQ2KjZe5tyRL-0" target="_blank" class="contact-link">Jiumo Wang</a></li>
+        </ul>
+      </div>
+      <div class="page-divider"></div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+    function updateSiteLogo() {
+      const logo = document.querySelector('.site-logo');
+      if (!logo) return;
+      if (window.scrollY > 100) {
+        logo.classList.add('site-logo--visible');
+      } else {
+        logo.classList.remove('site-logo--visible');
+      }
+    }
+    window.addEventListener('scroll', updateSiteLogo);
+    window.addEventListener('DOMContentLoaded', updateSiteLogo);
+    </script>
+</body>
+</html>
